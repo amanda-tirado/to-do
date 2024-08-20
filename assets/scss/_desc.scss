@@ -1,0 +1,16 @@
+.desc{
+    text-align: center;
+    margin: 6rem auto;
+    width: 70%;
+    &__p{
+        display: block;
+        font-size: 28px;
+        font-weight: 400;
+    }
+    &__span{
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+        color: $text-muted;
+    }
+}

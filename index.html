@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <header class="header">
+        
+    </header>
+    <main class="main">
+        <ul class="main__menu">
+                <li class="main__nav home">Home</li>
+                <li class="main__nav">Activities</li>
+                <li class="main__nav">To-Do</li>
+                <li class="main__nav">Completed</li>
+                <li class="main__nav">Settings</li>
+        </ul>
+        <div class="main__wrapper">
+            <section class="main__plus">
+                <button class="main__btn-burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="main__burger" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </button>
+                <button class="main__btn save">
+                    <div class="main__inside">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="main__svg visual" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                        <input type="text" placeholder="add a task..." class="main__input">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="main__svg plus" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                      </svg>
+                </button>
+                <button class="main__btn notifications">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="main__svg notifications" viewBox="0 0 16 16">
+                        <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
+                        <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                      </svg>
+                </button>
+                <button class="main__btn username">
+                    <div class="main__name-box">
+                        <span class="main__name">Ignacio Borja</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="main__svg arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </button>
+                <img src="assets/img/IMG_9701.JPG" alt="img" class="main__img profile">
+            </section>
+            <section class="main__moods">
+                <article class="main__mood">
+                    <h2 class="main__h2">TASKS:</h2>
+                </article>
+                <article class="main__mood done">
+                    <h2 class="main__h2">DONE:</h2> 
+                </article>
+            </section>
+        </div>
+    </main>
+    <section class="desc">
+        <p class="desc__p">Práctica en JS</p>
+        <span class="desc__span mt-3">Pequeño proyecto para el módulo de Desarrollo Web en Trazos donde puedes realizar un sorteo aleatorio a través de JavaScript con un diseño visual basado en la versión del sitio web app-sorteos.com.</span>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container"><hr class="footer__hr"></div>
+        <div class="footer__wrapper container">
+            <a href="https://www.amandatirado.es/" class="footer__title">&lt;/A<p class="footer__name">manda</p>&gt;</a>
+            <div class="footer__contact">
+                <a href="tel:+34 628 45 19 05" class=" footer__phone">+34 628 45 19 05</a>
+                <a class="footer__email" href="mailto:amandatiradoanula@gmail.com">amandatiradoanula@gmail.com</a>
+                <ul class="footer__social-media">
+                    <li class="footer__social-item"> 
+                        <a href="https://github.com/amandatirado" target="_blank" class="footer__link" title="fa-brands fa-github">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>   
+                    <li class="footer__social-item"> 
+                        <a href="https://www.linkedin.com/in/amandatiradoanula" target="_blank" class="footer__link" title="fa-brands fa-linkedin">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>   
+                    <li class="footer__social-item"> 
+                        <a href="https://www.linkedin.com/in/amandatiradoanula" target="_blank" class="footer__link" title="fa-brands fa-behance">
+                            <i class="bi bi-behance"></i>
+                        </a>
+                    </li>              
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

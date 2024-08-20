@@ -1,0 +1,25 @@
+$ppal               : #212121;
+$primary            : #f66f78;
+$primary-color-dark : #a84f54;
+$secondary          : #ebefea;
+$text-muted         : #7e868e;
+$lightgray          : #d4d4d4;
+$white              : #fafafa; 
+$blacky             : #272727;
+
+
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+$breakpoint: map-get($breakpoints, sm);
+/*** EXTEND ***/
+/* box-shadow */
+%boxshadow {
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+}

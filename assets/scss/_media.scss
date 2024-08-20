@@ -1,0 +1,78 @@
+@import '_mixins';
+// @media only screen and ( max-width: 1024px ){
+
+// }
+@media only screen and ( max-width: 960px ){
+
+}
+
+//movil:
+@media only screen and ( max-width: 480px ){
+    .main{
+        &__btn-burger{ 
+            display: block;
+            @include flexible (row, nowrap, flex-start, center);
+        }
+        &__burger{
+            width: 3.2rem;
+            fill: #212121;
+        }
+        &__menu{
+            display: none;
+        }
+        &__svg.visual{
+            display: none;
+        }
+        &__btn.save{
+            @include flexible (row, nowrap, space-around, center);
+
+            position: absolute;
+            top: 14%;
+            border: solid 2px lightgrey;
+            left: 10%;
+            width: 80%;
+            padding: 1.2rem .4rem;
+        }
+        &__svg.plus{
+            fill: lightgrey;
+            margin: 0;
+            width: 1.6rem;
+        }
+        &__btn.notifications{
+            display: none;
+        }
+        &__name-box{
+            display: none;
+        }
+        &__plus{
+            margin-top: 2rem;
+            @include flexible (row, nowrap, space-around, flex-start);
+            // position: relative;
+        }
+        &__wrapper{
+            width: 100%;
+            padding: 0;
+            position: relative;
+        }
+        &__moods{
+            margin: 0%;
+                position: absolute;
+                top: 12rem;
+                left: 10%;
+            // left: calc();
+            @include flexible (column, nowrap, flex-start, flex-start);
+        }
+        &__input{
+            width: 100%;
+            color: #ffff;
+        }
+        &__mood{
+            margin-right: 0;
+            width: 80%;
+        }
+        &__mood.done{
+            margin-left: 1rem;
+        }
+
+    }
+}
