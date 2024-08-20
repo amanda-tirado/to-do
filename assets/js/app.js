@@ -11,50 +11,40 @@ nodoMood.style.display = 'none';
 nodoMoodDone.style.display = 'none';
 
 // Crear tarea al hacer clic en el botón '+' o presionar Enter
-
-// creamos evento en btn 'plus' al crear tareas en input:
-$( '.main__svg.plus' ).on({
-    click:function(){
-        console.log( 'CLICK EN EL BOTÓN' );
-        let nombreTarea = $('.main__input').val();
-        console.log( nombreTarea );
-        if( nombreTarea !== ''){
-           
-            let tarea = {
-                nombre: nombreTarea,
-                estado: TO_DO
-            }
-            console.log( tarea )
-            tareas.push( tarea  );
-            pintaMe(tarea, nodoMood );
-            checkTitles();
-        }else{
-            nodoMood.style.display = 'none';
-            nodoMoodDone.style.display = 'none';
+function añadirTarea() {
+    let nombreTarea = document.querySelector('.main__input').value;
+    if (nombreTarea !== '') {
+        let tarea = {
+            nombre: nombreTarea,
+            estado: TO_DO
         }
+        tareas.push(tarea);
+        pintaMe(tarea, nodoMood);
+        checkTitles();
+    } else {
+        nodoMood.style.display = 'none';
+        nodoMoodDone.style.display = 'none';
     }
-})
+}
 
-function checkTitles(){
-    setTimeout( function(){
-        let tareasToDo = tareas.filter( cadaTarea =>{
-            return cadaTarea.estado === TO_DO
-        } )
-        if( tareasToDo.length === 0){
-            nodoMood.style.display = 'none';
-        }else{
-            nodoMood.style.display = 'block';
-        }
-        let tareasDone = tareas.filter( cadaTarea =>{
-            return cadaTarea.estado === DONE
-        } )
-        if( tareasDone.length === 0){
-            nodoMoodDone.style.display = 'none';
-        }else{
-            nodoMoodDone.style.display = 'block';
-    
-        }
-    },50 );
+// Evento clic en el botón '+'
+document.querySelector('.main__svg.plus').addEventListener('click', añadirTarea);
+
+// Evento tecla Enter en el input
+document.querySelector('.main__input').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        añadirTarea();
+    }
+});
+
+function checkTitles() {
+    setTimeout(function() {
+        let tareasToDo = tareas.filter(cadaTarea => cadaTarea.estado === TO_DO);
+        nodoMood.style.display = tareasToDo.length > 0 ? 'block' : 'none';
+        
+        let tareasDone = tareas.filter(cadaTarea => cadaTarea.estado === DONE);
+        nodoMoodDone.style.display = tareasDone.length > 0 ? 'block' : 'none';
+    }, 50);
 }
 function pintaMe( tarea , nodoLugar){
     let nodoActivitie = document.createElement( 'div' );
