@@ -28,7 +28,7 @@
         @include flexible (row, nowrap, flex-start, center);
     }
     &__inside{
-        width: 70%;
+        width: 100%; //70%;
         @include flexible (row, nowrap, flex-start, center);
     }
     &__btn.save{
@@ -62,8 +62,11 @@
         margin-right: 1rem;
     }
     &__input{
-        width: 70%;
+        width: 90%;
         color: $blacky;
+        &:focus{
+            outline: -webkit-focus-ring-color auto 0px;
+        }
     }
     &__btn.username{
     }
@@ -98,14 +101,17 @@
     }
     &__activitie{
         margin-top: 1rem;
-        color: #d3d3d3;
-        background-color: $blacky;
+        color: $blacky;//#d3d3d3;
+        background-color: $white; //$blacky;
         padding: 1rem;
         border-radius: 1rem;
         @include flexible (row, nowrap, space-between, center);
     }
     &__symbols{
         @include flexible (row, nowrap, flex-start, center);
+        &:hover{
+            cursor: pointer;
+        }
     }
     &__svg.symbol{
         fill: #d3d3d3;

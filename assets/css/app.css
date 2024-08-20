@@ -212,7 +212,7 @@ body {
           align-items: center;
 }
 .main__inside {
-  width: 70%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,8 +282,11 @@ body {
   margin-right: 1rem;
 }
 .main__input {
-  width: 70%;
+  width: 90%;
   color: #272727;
+}
+.main__input:focus {
+  outline: -webkit-focus-ring-color auto 0px;
 }
 .main__name-box {
   font-weight: 800;
@@ -340,8 +343,8 @@ body {
 }
 .main__activitie {
   margin-top: 1rem;
-  color: #d3d3d3;
-  background-color: #272727;
+  color: #272727;
+  background-color: #fafafa;
   padding: 1rem;
   border-radius: 1rem;
   display: -webkit-box;
@@ -372,6 +375,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.main__symbols:hover {
+  cursor: pointer;
 }
 .main__svg.symbol {
   fill: #d3d3d3;
