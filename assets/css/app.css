@@ -455,21 +455,23 @@ body {
 
 /* DESC */
 @media only screen and (max-width: 480px) {
-  .main__btn-burger {
-    display: none;
+  .main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .main__btn-burger {
+    display: none;
   }
   .main__burger {
     display: none;
@@ -561,6 +563,13 @@ body {
   .main__img.profile {
     display: none;
   }
+  .footer__hr {
+    width: 80%;
+    margin: auto;
+  }
+  .footer__contact {
+    margin: 1.5rem 0;
+  }
 }
 /* DESC */
 .desc {
@@ -605,6 +614,23 @@ body {
   font-weight: 400;
   color: #7e868e;
   text-wrap: balance;
+}
+.practices__button {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: solid 1px #272727;
+  color: #272727;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.practices__button:hover {
+  background-color: #272727;
+  color: white;
+  background: rgb(63, 94, 251);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(63, 94, 251)), to(rgb(252, 70, 107)));
+  background: linear-gradient(90deg, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
+  font-weight: 500;
 }
 
 /* FOOTER */
