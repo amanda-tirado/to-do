@@ -10,10 +10,12 @@
 @media only screen and ( max-width: 480px ){
     .main{
         &__btn-burger{ 
-            display: block;
+            //display: block;
+            display: none;
             @include flexible (row, nowrap, flex-start, center);
         }
         &__burger{
+            display: none;
             width: 3.2rem;
             fill: #212121;
         }
@@ -25,9 +27,6 @@
         }
         &__btn.save{
             @include flexible (row, nowrap, space-around, center);
-
-            position: absolute;
-            top: 14%;
             border: solid 2px lightgrey;
             left: 10%;
             width: 80%;
@@ -46,7 +45,8 @@
         }
         &__plus{
             margin-top: 2rem;
-            @include flexible (row, nowrap, space-around, flex-start);
+            @include flexible (row, nowrap, flex-start, flex-start);
+            margin-left: 2rem;
             // position: relative;
         }
         &__wrapper{
@@ -55,24 +55,23 @@
             position: relative;
         }
         &__moods{
-            margin: 0%;
-                position: absolute;
-                top: 12rem;
-                left: 10%;
-            // left: calc();
             @include flexible (column, nowrap, flex-start, flex-start);
+            gap: 2rem;
         }
         &__input{
             width: 100%;
-            color: #ffff;
+            color: $blacky;
+            font-weight: 400;
         }
         &__mood{
-            margin-right: 0;
             width: 80%;
+            margin: auto;
         }
         &__mood.done{
-            margin-left: 1rem;
+            //margin-left: 1rem;
         }
-
+        &__img.profile{
+            display: none;
+        }
     }
 }
