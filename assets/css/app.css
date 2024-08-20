@@ -526,8 +526,13 @@ body {
 /* DESC */
 .desc {
   text-align: center;
-  margin: 6rem auto;
-  width: 70%;
+  background-color: #ebefea;
+  margin: 4rem 0;
+}
+.desc__wrapper {
+  width: 60%;
+  margin: auto;
+  padding: 3rem 0;
 }
 .desc__p {
   display: block;
@@ -536,14 +541,34 @@ body {
 }
 .desc__span {
   display: block;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   color: #7e868e;
+  text-wrap: balance;
+}
+
+/* PRACTICES */
+.practices {
+  text-align: center;
+  margin: 6rem auto;
+  width: 60%;
+}
+.practices__p {
+  display: block;
+  font-size: 28px;
+  font-weight: 400;
+}
+.practices__span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7e868e;
+  text-wrap: balance;
 }
 
 /* FOOTER */
 .footer {
-  padding: 2rem 0;
+  padding: 3rem 0 4rem;
   background-color: #ebefea;
 }
 .footer__wrapper {

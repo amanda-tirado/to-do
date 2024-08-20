@@ -1,5 +1,5 @@
 .footer{
-    padding: 2rem 0;
+    padding: 3rem 0 4rem;
     background-color: $secondary;
     &__wrapper{
         @include flexible (column, nowrap, center, center);

@@ -1,20 +1,13 @@
-.desc{
+.practices{
     text-align: center;
-    background-color: $secondary;
-    margin: 4rem 0;
-    &__wrapper{
-        width: 60%;
-        margin: auto;
-        padding: 3rem 0;
-    }
+    margin: 6rem auto;
+    width: 60%;
     &__p{
         display: block;
         font-size: 28px;
         font-weight: 400;
-        // color: white;
     }
     &__span{
-        // color: white;
         display: block;
         font-size: 16px;
         font-weight: 400;
