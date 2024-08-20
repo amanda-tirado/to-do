@@ -1,7 +1,24 @@
 .practices{
     text-align: center;
     margin: 6rem auto;
-    width: 60%;
+    width: 90%;
+    @include respond-above(sm) {    
+        @include flexible (row, nowrap, center, center);
+    }
+    &__img{
+        display: none;
+        @include respond-above(sm) {    
+            width: 20%;
+            display: block;
+        }
+    }
+    &__wrapper{
+        width: 100%;
+        @include respond-above(sm) {            
+            width: 50%;
+            margin: auto;
+        }
+    }
     &__p{
         display: block;
         font-size: 28px;
@@ -15,7 +32,7 @@
         text-wrap: balance;
     }
     &__button{
-        width: 100%;
+        // width: 100%;
         margin: 2rem auto;
         padding: 1rem;
         border: solid 1px $blacky;
